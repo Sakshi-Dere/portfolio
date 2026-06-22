@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Enquiry - Sakshi Dere | Submit your project requirements and get a quote">
+    <meta name="keywords" content="Enquiry, Project Quote, Web Development Request, Freelance">
+    <meta name="robots" content="index, follow">
+    <meta name="canonical" href="https://sakshi-dere.com/enquiry.html">
+    
+    <title>Enquiry - Sakshi Dere | Get a Project Quote</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%236C3BFF'>S</text></svg>">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">Sakshi Dere</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><button class="hire-btn">Hire Me</button></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main style="margin-top: 80px; padding: 40px 2rem;">
+        <section style="min-height: calc(100vh - 120px);">
+            <div class="container">
+                <div class="enquiry-form">
+                    <h2 style="text-align: center;">Project Enquiry Form</h2>
+                    <p class="enquiry-subtitle">
+                        Tell me about your project and I'll get back to you with a customized quote within 24 hours.
+                    </p>
+                    <div class="form-highlights">
+                        <span class="form-chip">💡 Fast Proposal</span>
+                        <span class="form-chip">🛠️ Tailored Solution</span>
+                        <span class="form-chip">✨ Expert Guidance</span>
+                    </div>
+
+                    <form id="enquiryForm">
+                        <!-- Row 1: Name and Company -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enquiryName">Your Name *</label>
+                                <input type="text" id="enquiryName" name="name" placeholder="Full Name" required>
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiryCompany">Company Name *</label>
+                                <input type="text" id="enquiryCompany" name="company" placeholder="Your Company" required>
+                                <div class="form-error"></div>
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Email and Mobile -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enquiryEmail">Email Address *</label>
+                                <input type="email" id="enquiryEmail" name="email" placeholder="your@email.com" required>
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiryMobile">Mobile Number *</label>
+                                <input type="tel" id="enquiryMobile" name="mobile" placeholder="10-digit number" required>
+                                <div class="form-error"></div>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Project Type -->
+                        <div class="form-row full">
+                            <div class="form-group">
+                                <label for="enquiryProjectType">Project Type *</label>
+                                <select id="enquiryProjectType" name="projectType" required>
+                                    <option value="">-- Select Project Type --</option>
+                                    <option value="Website">Website Development</option>
+                                    <option value="WebApp">Web Application</option>
+                                    <option value="ECommerce">E-Commerce Platform</option>
+                                    <option value="Portfolio">Portfolio Website</option>
+                                    <option value="Database">Database Solution</option>
+                                    <option value="Python">Python Automation</option>
+                                    <option value="ASPNet">ASP.NET Application</option>
+                                    <option value="Other">Other (Specify in Description)</option>
+                                </select>
+                                <div class="form-error"></div>
+                            </div>
+                        </div>
+
+                        <!-- Row 4: Budget and Deadline -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enquiryBudget">Estimated Budget (₹) *</label>
+                                <input type="number" id="enquiryBudget" name="budget" placeholder="Budget in INR" min="0" required>
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiryDeadline">Project Deadline *</label>
+                                <input type="date" id="enquiryDeadline" name="deadline" required>
+                                <div class="form-error"></div>
+                            </div>
+                        </div>
+
+                        <!-- Row 5: Project Description -->
+                        <div class="form-row full">
+                            <div class="form-group">
+                                <label for="enquiryDescription">Project Description *</label>
+                                <textarea id="enquiryDescription" name="description" placeholder="Describe your project requirements, features, and any specific details (minimum 20 characters)" required></textarea>
+                                <div class="form-error"></div>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="form-buttons">
+                            <button type="submit" class="submit-btn" style="flex: 1;">Submit Enquiry</button>
+                            <button type="reset" class="reset-btn">Clear Form</button>
+                        </div>
+
+                        <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; text-align: center;">
+                            * Required fields. Your information is secure and stored locally in your browser.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Why Submit -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📋</div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Detailed Quote</h3>
+                        <p style="color: var(--text-light);">Get a comprehensive and transparent quote based on your project requirements.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">⏰</div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Quick Response</h3>
+                        <p style="color: var(--text-light);">I respond to all enquiries within 24 hours with personalized recommendations.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">💼</div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Professional Service</h3>
+                        <p style="color: var(--text-light);">Work with a dedicated professional committed to your project's success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ about Enquiry -->
+        <section style="background: linear-gradient(135deg, rgba(108, 59, 255, 0.05), rgba(157, 78, 221, 0.05)); padding: 80px 2rem; margin-top: 4rem;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Enquiry FAQs</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How soon will I hear back?
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            I aim to respond to all enquiries within 24 hours with a detailed quote and project proposal. For urgent projects, contact me via WhatsApp for faster response.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you require a deposit?
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            Yes, I typically require 30-40% advance payment to begin work. The remaining amount is due upon project completion. Payment terms can be negotiated for larger projects.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What if I'm not sure about my project requirements?
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            No problem! Describe what you want to achieve, and I'll conduct a free consultation to help you define requirements and suggest the best approach for your project.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can I modify my requirements later?
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            Yes! I accommodate reasonable changes during development. Any significant changes may require timeline or cost adjustments, which we'll discuss transparently.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer discounts for multiple projects?
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            Absolutely! I offer special rates for retainer services, ongoing maintenance, and multiple projects. Contact me to discuss package deals and discounts.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What about ongoing support and maintenance?
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            I provide 24/7 support for all projects. Post-launch, you can opt for a maintenance package that includes bug fixes, updates, and feature enhancements.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="background: linear-gradient(135deg, #6C3BFF, #9D4EDD); color: white; text-align: center; padding: 60px 2rem; margin-top: 4rem;">
+            <div class="container">
+                <h2 style="color: white;">Questions Before Submitting?</h2>
+                <p style="font-size: 1.1rem; margin: 1rem 0 2rem; opacity: 0.9;">Feel free to contact me directly for a quick chat about your project.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn-primary">Contact Me</a>
+                    <a href="tel:+918856832610" class="btn-secondary">Call: +91 8856832610</a>
+                    <a href="https://wa.me/918856832610" target="_blank" class="btn-secondary">WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="whatsapp-btn" title="Chat on WhatsApp">💬</a>
+
+    <!-- Back To Top Button -->
+    <div class="back-to-top">↑</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html">Website Development</a></li>
+                    <li><a href="services.html">Web Applications</a></li>
+                    <li><a href="services.html">Database Solutions</a></li>
+                    <li><a href="services.html">Python Automation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/Sakshi-Dere" target="_blank" class="social-icon" title="GitHub">🐙</a>
+                    <a href="https://linkedin.com/in/sakshi-dere-36522b385" target="_blank" class="social-icon" title="LinkedIn">💼</a>
+                    <a href="https://wa.me/918856832610" target="_blank" class="social-icon" title="WhatsApp">💬</a>
+                    <a href="mailto:deresakshi11@gmail.com" class="social-icon" title="Email">✉️</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <p>&copy; 2024 Sakshi Dere. All rights reserved. Built with ❤️ for quality.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

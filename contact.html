@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sakshi Dere - Freelance Web Developer. Get in touch for web development, software solutions, and more.">
+    <meta name="keywords" content="Contact, Web Developer, Freelance, Email, Phone">
+    <meta name="robots" content="index, follow">
+    <meta name="canonical" href="https://sakshi-dere.com/contact.html">
+    
+    <title>Contact - Sakshi Dere | Web Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%236C3BFF'>S</text></svg>">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">Sakshi Dere</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><button class="hire-btn">Hire Me</button></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <!-- Contact Hero -->
+        <section style="background: linear-gradient(135deg, rgba(108, 59, 255, 0.1), rgba(157, 78, 221, 0.1)); padding: 80px 2rem; text-align: center;">
+            <div class="container">
+                <h1 style="color: var(--primary); font-size: 3rem; margin-bottom: 1rem;">Get In Touch</h1>
+                <p style="color: var(--text-light); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    Have a question or project in mind? I'd love to hear from you. Let's start a conversation!
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact reveal" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2 style="margin-bottom: 2rem;">Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:deresakshi11@gmail.com" style="color: var(--primary); text-decoration: none;">deresakshi11@gmail.com</a></p>
+                                <p style="font-size: 0.9rem; color: var(--text-light);">Response time: Within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+918856832610" style="color: var(--primary); text-decoration: none;">+91 8856832610</a></p>
+                                <p style="font-size: 0.9rem; color: var(--text-light);">Available: Mon-Sat, 9 AM - 6 PM IST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/918856832610" target="_blank" style="color: var(--primary); text-decoration: none;">Chat on WhatsApp</a></p>
+                                <p style="font-size: 0.9rem; color: var(--text-light);">Quick messages welcome</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Karvenagar, Pune<br>Maharashtra, India - 411052</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <h3>Social Links</h3>
+                                <div style="display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap;">
+                                    <a href="https://github.com/Sakshi-Dere" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">GitHub</a>
+                                    <a href="https://linkedin.com/in/sakshi-dere-36522b385" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div>
+                        <form id="contactForm" class="contact-form" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: var(--shadow);">
+                            <h2 style="margin-bottom: 1.5rem; color: var(--primary);">Send Me A Message</h2>
+
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                                <div class="form-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required>
+                                <div class="form-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="phone" placeholder="10-digit phone number" required>
+                                <div class="form-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Subject *</label>
+                                <input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required>
+                                <div class="form-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Message *</label>
+                                <textarea id="contactMessage" name="message" placeholder="Please tell me more about your project..." required></textarea>
+                                <div class="form-error"></div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Send Message</button>
+                            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; text-align: center;">
+                                * Required fields. All data is stored securely in your browser.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section reveal">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 2rem;">My Location</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.8937618827476!2d73.85476!3d18.47357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2efc23333333%3A0x123456789abcdef!2sKarvenagar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="background: linear-gradient(135deg, #6C3BFF, #9D4EDD); color: white; text-align: center; padding: 60px 2rem;">
+            <div class="container">
+                <h2 style="color: white;">Got a project idea?</h2>
+                <p style="font-size: 1.1rem; margin: 1rem 0 2rem; opacity: 0.9;">Let's discuss your requirements and create something amazing together!</p>
+                <a href="enquiry.html" class="btn-primary">Submit Project Enquiry</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="whatsapp-btn" title="Chat on WhatsApp">💬</a>
+
+    <!-- Back To Top Button -->
+    <div class="back-to-top">↑</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html">Website Development</a></li>
+                    <li><a href="services.html">Web Applications</a></li>
+                    <li><a href="services.html">Database Solutions</a></li>
+                    <li><a href="services.html">Python Automation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/Sakshi-Dere" target="_blank" class="social-icon" title="GitHub">🐙</a>
+                    <a href="https://linkedin.com/in/sakshi-dere-36522b385" target="_blank" class="social-icon" title="LinkedIn">💼</a>
+                    <a href="https://wa.me/918856832610" target="_blank" class="social-icon" title="WhatsApp">💬</a>
+                    <a href="mailto:deresakshi11@gmail.com" class="social-icon" title="Email">✉️</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <p>&copy; 2024 Sakshi Dere. All rights reserved. Built with ❤️ for quality.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
