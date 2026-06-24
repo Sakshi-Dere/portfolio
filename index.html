@@ -83,8 +83,8 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="enquiry.html">Enquiry</a></li>
-                    <li><button class="hire-btn">Hire Me</button></li>
+                    
+                    <li><button class="hire-btn"><a href="contact.html">Hire Me</a></button></li>
                 </ul>
             </nav>
             <button class="menu-toggle">☰</button>
@@ -106,14 +106,14 @@
                 <p>Software Developer & Freelance Web Developer</p>
                 <p class="typing-effect">HTML Developer</p>
                 <div class="hero-buttons">
-                    <button class="btn-primary">Hire Me</button>
-                    <button class="btn-secondary">View Projects</button>
+                    <button class="btn-primary"><a href="contact.html">Hire Me</a></button>
+                    <button class="btn-secondary"><a href="projects.html">View Projects</a></button>
                     <a href="contact.html" class="btn-secondary">Contact Me</a>
                 </div>
             </div>
 
             <div class="hero-image">
-                <div class="profile-image">👩‍💻</div>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Professional Developer" class="profile-image-img" style="width: 100%; max-width: 400px; border-radius: 20px; border: 3px solid var(--primary); box-shadow: var(--shadow-lg);">
             </div>
         </section>
 
@@ -149,10 +149,7 @@
                         </div>
                         <a href="about.html" class="resume-btn">Learn More →</a>
                     </div>
-                    <div class="about-image">
-                        <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #6C3BFF, #9D4EDD); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 80px;">📚</div>
-                    </div>
-                </div>
+                                    </div>
             </div>
         </section>
 
@@ -269,7 +266,9 @@
                 <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Check out some of my recent work</p>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-image"><img src="assets/images/project1.svg" alt="QR Code Attendance"></div>
+                        <div class="project-image" style="background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); background-size: cover; background-position: center;">
+                            <div style="background: rgba(0,0,0,0.3); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🔐</div>
+                        </div>
                         <div class="project-content">
                             <h3 class="project-title">QR Code Student Attendance</h3>
                             <div class="project-tech">
@@ -286,7 +285,9 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-image"><img src="assets/images/project2.svg" alt="Job Portal"></div>
+                        <div class="project-image" style="background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); background-size: cover; background-position: center;">
+                            <div style="background: rgba(0,0,0,0.3); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3rem;">💼</div>
+                        </div>
                         <div class="project-content">
                             <h3 class="project-title">Job Portal System</h3>
                             <div class="project-tech">
@@ -303,7 +304,9 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-image"><img src="assets/images/project3.svg" alt="Hospital Management"></div>
+                        <div class="project-image" style="background: url('https://images.unsplash.com/photo-1576091160399-21c6f0f7f2c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); background-size: cover; background-position: center;">
+                            <div style="background: rgba(0,0,0,0.3); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🏥</div>
+                        </div>
                         <div class="project-content">
                             <h3 class="project-title">Hospital Management System</h3>
                             <div class="project-tech">
@@ -321,6 +324,58 @@
                 </div>
                 <div style="text-align: center; margin-top: 2rem;">
                     <a href="projects.html" class="btn-primary">View All Projects →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="skills reveal" style="background: linear-gradient(135deg, rgba(108, 59, 255, 0.08), rgba(157, 78, 221, 0.08));">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">My Technology Stack</h2>
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Frontend Technologies</h3>
+                        <div class="tech-stack">
+                            <div class="tech-item">HTML5</div>
+                            <div class="tech-item">CSS3</div>
+                            <div class="tech-item">JavaScript</div>
+                            <div class="tech-item">Responsive Design</div>
+                            <div class="tech-item">UI/UX</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Backend Technologies</h3>
+                        <div class="tech-stack">
+                            <div class="tech-item">ASP.NET</div>
+                            <div class="tech-item">PHP</div>
+                            <div class="tech-item">Python</div>
+                            <div class="tech-item">C#</div>
+                            <div class="tech-item">RESTful APIs</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Database Technologies</h3>
+                        <div class="tech-stack">
+                            <div class="tech-item">MySQL</div>
+                            <div class="tech-item">SQL Server</div>
+                            <div class="tech-item">Database Design</div>
+                            <div class="tech-item">Query Optimization</div>
+                            <div class="tech-item">Data Management</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Tools & Others</h3>
+                        <div class="tech-stack">
+                            <div class="tech-item">Git & GitHub</div>
+                            <div class="tech-item">Web Development</div>
+                            <div class="tech-item">E-Commerce</div>
+                            <div class="tech-item">Automation</div>
+                            <div class="tech-item">Cloud Services</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -364,6 +419,173 @@
                 <div class="carousel-buttons">
                     <button class="carousel-btn" id="prevTestimonial">← Previous</button>
                     <button class="carousel-btn" id="nextTestimonial">Next →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="videos reveal">
+            <div class="container">
+                <h2>Watch My Development Journey</h2>
+                <p class="videos-intro">Learn web development, programming, and freelancing tips from comprehensive video tutorials</p>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/20Qb7pNMv-4?si=p8nTzTvbzwrrE35w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="video-play-btn">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-category">Web Development</span>
+                            <h3 class="video-title">HTML & CSS Tutorial</h3>
+                            <p class="video-description">Learn the fundamentals of HTML and CSS to build responsive websites</p>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="video-watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/ADhiSLUEQas?si=5jlfWJX9rWYrU0KU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <div class="video-play-btn">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-category">Programming</span>
+                            <h3 class="video-title">JavaScript Tutorial</h3>
+                            <p class="video-description">Master JavaScript to create interactive and dynamic web applications</p>
+                            <a href="https://www.youtube.com/watch?v=jS4aFq5-91o" target="_blank" class="video-watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ps575maf37Y?si=mYVHNjZpD_5tITpq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <div class="video-play-btn">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-category">Programming</span>
+                            <h3 class="video-title">Python Tutorial for Beginners</h3>
+                            <p class="video-description">Start learning Python programming with practical examples</p>
+                            <a href="https://www.youtube.com/watch?v=rfscVS0vtik" target="_blank" class="video-watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LV118IYeQE0?si=iekr8Ss4JdSjD9YN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <div class="video-play-btn">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-category">Web Development</span>
+                            <h3 class="video-title">Web Development Roadmap 2024</h3>
+                            <p class="video-description">Complete guide to becoming a professional web developer</p>
+                            <a href="https://www.youtube.com/watch?v=sSrubJiT2_E" target="_blank" class="video-watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-container">
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/Rvkm7oV8l1Y?si=fdEeAHxaMXWHaigC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <div class="video-play-btn">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-category">Database</span>
+                            <h3 class="video-title">Database Design Tutorial</h3>
+                            <p class="video-description">Learn to design and manage databases effectively</p>
+                            <a href="https://www.youtube.com/watch?v=eWGQkGG8rdk" target="_blank" class="video-watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/htU3Xs5Nhvw?si=2hDhGLc1rIknCvr9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <div class="video-play-btn">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-category">Freelancing</span>
+                            <h3 class="video-title">Complete Freelancing Guide</h3>
+                            <p class="video-description">Everything you need to know about starting a successful freelancing career</p>
+                            <a href="https://www.youtube.com/watch?v=rPSl_yIq4dM" target="_blank" class="video-watch-btn">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq reveal">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Have questions? I'm here to help!</p>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is your typical project timeline?</span>
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Project timelines vary based on scope and complexity. Small websites typically take 2-4 weeks, while larger applications may take 2-3 months. I always provide a detailed timeline and project estimate upfront.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you provide support after project completion?</span>
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! I provide 24/7 support for all my projects. This includes bug fixes, minor updates, and technical assistance. I'm committed to ensuring your success even after the project is delivered.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What technologies do you specialize in?</span>
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I specialize in HTML, CSS, JavaScript, Python, PHP, ASP.NET, MySQL, SQL Server, and modern web frameworks. I stay updated with the latest technologies and best practices in the industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do you handle project changes and revisions?</span>
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I'm flexible and accommodating to changes. Minor revisions are included in the project estimate. For significant changes, we can discuss adjustments to the timeline and budget together.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you sign NDAs and ensure confidentiality?</span>
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! I respect client confidentiality and am happy to sign NDAs. Your project information and business details are completely safe with me. I maintain strict privacy standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is your pricing structure?</span>
+                            <span class="faq-toggle">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>My pricing depends on project scope, complexity, and requirements. I offer flexible pricing options including hourly rates, fixed project costs, and retainer packages. Contact me for a free consultation and detailed quote.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
